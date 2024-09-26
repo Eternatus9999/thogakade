@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.item.ViewItemController">
+   <children>
+      <JFXTextField fx:id="txtId" layoutX="46.0" layoutY="45.0" promptText="ID" />
+      <JFXTextField fx:id="txtDesc" layoutX="212.0" layoutY="45.0" promptText="Description" />
+      <JFXTextField fx:id="txtPackSize" layoutX="382.0" layoutY="45.0" promptText="PackSize" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="46.0" layoutY="101.0" promptText="UnitPrice" />
+      <JFXTextField fx:id="txtQty" layoutX="212.0" layoutY="101.0" promptText="QtyHand" />
+      <JFXButton layoutX="78.0" layoutY="167.0" onAction="#btnOnClickAdd" prefHeight="26.0" prefWidth="109.0" text="ADD" />
+      <JFXButton layoutX="196.0" layoutY="167.0" onAction="#btnOnClickUpdate" prefHeight="26.0" prefWidth="109.0" text="UPDATE" />
+      <JFXButton layoutX="324.0" layoutY="167.0" onAction="#btnOnClickDelete" prefHeight="26.0" prefWidth="109.0" text="DELETE" />
+      <JFXButton layoutX="433.0" layoutY="167.0" onAction="#btnOnClickSearch" prefHeight="26.0" prefWidth="109.0" text="SEARCH" />
+      <TableView fx:id="tblViewItem" layoutX="38.0" layoutY="214.0" prefHeight="200.0" prefWidth="531.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="68.800048828125" text="ID" />
+            <TableColumn fx:id="colDesc" prefWidth="168.79998779296875" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="98.4000244140625" text="PackSize" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="108.0" text="UnitPrice" />
+            <TableColumn fx:id="colQtyHand" prefWidth="88.00006103515625" text="QtyHand" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
